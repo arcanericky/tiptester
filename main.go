@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 var versionText = "unknown"
 
 func main() {
-	fmt.Printf("Tip Tester %s\n", versionText)
+	fmt.Printf("Tip Tester %s built with %s\n", versionText, runtime.Version())
 }
